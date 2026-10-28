@@ -14,6 +14,17 @@
         - id: Magazine46x30mmPistolFMJ
         - id: Magazine46x30mmPistolFMJ
 
+- type: entity
+  parent: BriefcaseSyndiePaw
+  id: SyndicateContractBundle
+  description: A sealed bundle of blank Syndicate contracts. Each one binds a soul when signed.
+  suffix: Contractor
+  components:
+  - type: StorageFill
+    contents:
+    - id: PaperSyndicateContract
+      amount: 5
+
 # hell
 - type: entity
   id: BriefcaseLawyerSet
@@ -320,23 +331,20 @@
         - id: EncryptionKeySyndie
 
 - type: entity
-  id: BriefcasePneumaticSet
+  id: BriefcaseRicardoSet
   parent: BriefcaseSyndiePaw
-  suffix: Syndicate, Bundle, Pneumatic
+  suffix: Syndicate, Bundle, Ricardo
   components:
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: WeaponImprovisedPneumaticCannon
-        - id: ThrowingKnivesKit
-        - id: ThrowingKnivesKit
-        - id: FoodPieBananaCream
-        - id: FoodPieBananaCream
-        - id: FoodPieBananaCream
-        - id: ClothingUniformJumpsuitClown
-        - id: ClothingMaskClown
-        - id: ClothingShoesClown
+        - id: ClothingNeckCloakRicardo
+        - id: ClothingUniformJumpsuitRicardo
+        - id: ClothingHandsRicardoChains
+        - id: MindcontrolImplanter
+        - id: MindcontrolImplanter
+        - id: BookRicardo
         - id: EncryptionKeySyndie
 
 - type: entity
